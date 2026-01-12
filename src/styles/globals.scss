@@ -1,0 +1,46 @@
+@use "./tokens/variables";
+@use "./tokens/mixins" as *;
+
+body {
+  background: var(--color-bg);
+  min-height: 100vh;
+  font-family:
+    var(--font-noto-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  color: var(--color-ink);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+main {
+  display: block;
+}
+
+.section {
+  padding: 5rem 2rem;
+
+  @include tab {
+    padding: vw(4rem) vw(2rem);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+
+  @include tab {
+    font-size: min(vw(1.75rem), 2rem);
+    text-wrap: pretty;
+    line-break: strict;
+    text-align: center;
+  }
+}
+
+em {
+  font-style: normal;
+}

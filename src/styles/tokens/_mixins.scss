@@ -1,0 +1,27 @@
+@use "sass:math";
+
+@function vw($size, $base: 375px) {
+  $resolved-base: if(unitless($base), $base * 1px, $base);
+  $resolved-size: $size;
+
+  @if math.unit($resolved-size) == "rem" {
+    $resolved-size: math.div($resolved-size, 1rem) * 16px;
+  }
+
+  @return math.div($resolved-size, $resolved-base) * 100vw;
+}
+
+//　メディアクエリ
+@mixin tab {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin link-hover {
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

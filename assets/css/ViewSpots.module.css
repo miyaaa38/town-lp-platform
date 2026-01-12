@@ -1,0 +1,38 @@
+.carousel {
+  padding-bottom: 2.5rem;
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 24px;
+}
+
+.header p {
+  color: var(--color-muted);
+}
+
+.track {
+  margin-top: 1rem;
+}
+
+.staticTrack {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: min(1.3333333333vw, 1rem);
+  align-items: stretch;
+}
+@media (max-width: 768px) {
+  .staticTrack {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.slide {
+  height: auto;
+}
+/*# sourceMappingURL=ViewSpots.module.css.map */

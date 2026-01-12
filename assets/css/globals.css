@@ -1,0 +1,58 @@
+:root {
+  --color-ink: #222222;
+  --color-accent: #e95504;
+  --color-bg: #fdfdfd;
+  --color-mid: #f1f0ec;
+  --color-mid2: #f8f7f3;
+  --color-white: #ffffff;
+  --shadow-soft: 0 12px 30px rgba(27, 42, 65, 0.12);
+  --radius-lg: 2.5rem;
+  --radius-md: 1rem;
+}
+
+body {
+  background: var(--color-bg);
+  min-height: 100vh;
+  font-family:
+    var(--font-noto-sans), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  color: var(--color-ink);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+main {
+  display: block;
+}
+
+.section {
+  padding: 5rem 2rem;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 17.0666666667vw 8.5333333333vw;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: min(7.4666666667vw, 2rem);
+    text-wrap: pretty;
+    line-break: strict;
+    text-align: center;
+  }
+}
+
+em {
+  font-style: normal;
+}
+/*# sourceMappingURL=globals.css.map */

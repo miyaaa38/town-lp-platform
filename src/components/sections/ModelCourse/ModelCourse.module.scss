@@ -1,0 +1,48 @@
+@use "../../../styles/tokens/mixins" as *;
+
+.title {
+  text-align: center;
+}
+
+.summary {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.stops {
+  margin-top: 1rem;
+  margin-inline: auto;
+  max-width: 800px;
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+
+  &Item {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    background-color: var(--color-mid);
+    border-radius: 100vmax;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include tab {
+      padding-inline: 1rem;
+    }
+  }
+
+  &Number {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}

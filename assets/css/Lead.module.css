@@ -1,0 +1,23 @@
+.lead {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.lead h2 {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .lead h2 {
+    font-size: 7.4666666667vw;
+    text-wrap: pretty;
+    line-break: strict;
+  }
+}
+
+.lead p {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  white-space: pre-line;
+  line-height: 1.8;
+}
+/*# sourceMappingURL=Lead.module.css.map */

@@ -1,0 +1,38 @@
+@use "../../../styles/tokens/mixins" as *;
+
+.carousel {
+  padding-bottom: 2.5rem;
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 24px;
+}
+
+.header p {
+  color: var(--color-muted);
+}
+
+.track {
+  margin-top: 1rem;
+}
+
+.staticTrack {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: min(vw(1rem, 1200px), 1rem);
+  align-items: stretch;
+
+  @include tab {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.slide {
+  height: auto;
+}

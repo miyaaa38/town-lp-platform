@@ -1,0 +1,29 @@
+.footer {
+  padding: 1.5rem 2rem;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem 4.2666666667vw;
+  }
+}
+
+.inner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--color-ink);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+.links a {
+  transition: opacity 0.3s ease;
+}
+.links a:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=Footer.module.css.map */

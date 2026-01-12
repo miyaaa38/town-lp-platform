@@ -1,0 +1,74 @@
+@use "../../../styles/tokens/mixins" as *;
+
+.cta {
+  background: var(--color-accent);
+}
+
+.inner {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  @include tab {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+
+.info {
+  flex: 1;
+}
+
+.title {
+  color: #fff;
+}
+
+.text {
+  margin-top: 1rem;
+  color: #fff;
+  max-width: 520px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  flex: 1;
+
+  @include tab {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+
+.primaryLink {
+  width: 100%;
+  min-width: 260px;
+  padding: 1rem 2rem;
+  border-radius: 100vmax;
+  background: #fff;
+  border: 2px solid #fff;
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  text-align: center;
+  @include link-hover;
+
+  @include tab {
+    width: 100%;
+    text-align: center;
+    font-size: min(vw(1.25rem), 1.5rem);
+  }
+
+  &--second {
+    background: transparent;
+    color: #fff;
+  }
+}

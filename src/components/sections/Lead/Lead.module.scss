@@ -1,0 +1,23 @@
+@use "../../../styles/tokens/mixins" as *;
+
+.lead {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.lead h2 {
+  font-size: 2rem;
+
+  @include tab {
+    font-size: vw(1.75rem);
+    text-wrap: pretty;
+    line-break: strict;
+  }
+}
+
+.lead p {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  white-space: pre-line;
+  line-height: 1.8;
+}

@@ -1,0 +1,109 @@
+@use "../../../styles/tokens/mixins" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  margin: 0 auto;
+
+  @include tab {
+    padding: 1rem vw(1rem, 375);
+  }
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--color-ink);
+  font-family: var(--font-darumadrop), "Noto Sans JP", sans-serif;
+  line-height: 1;
+
+  @include tab {
+    font-size: min(vw(1.875rem), 1.875rem);
+  }
+
+  small {
+    font-size: 1.5rem;
+    margin-left: 0.25rem;
+
+    @include tab {
+      font-size: min(vw(1.125rem), 1.125rem);
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  @include tab {
+    gap: 0.5rem;
+  }
+}
+
+.favoriteButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 2rem;
+  border: 1px solid var(--color-ink);
+  border-radius: 100vmax;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  @include link-hover;
+  opacity: 1;
+
+  @include tab {
+    padding: 0;
+    border: none;
+    border-radius: none;
+    background: none;
+  }
+}
+
+.favoriteButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.favoriteText {
+  font-size: 1rem;
+
+  @include tab {
+    display: none;
+  }
+}
+
+.favoriteIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-flex;
+}
+
+.favoriteIcon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.loginLink {
+  padding: 0.5rem 2.5rem;
+  border-radius: 100vmax;
+  background: var(--color-ink);
+  color: #fff;
+  font-size: 1rem;
+  @include link-hover;
+
+  @include tab {
+    padding: 0.5rem vw(1.5rem, 375);
+    font-size: 0.875rem;
+  }
+}

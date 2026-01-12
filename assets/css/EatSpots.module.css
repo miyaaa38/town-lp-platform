@@ -1,0 +1,31 @@
+.carousel {
+  background-color: var(--color-mid);
+}
+
+.track {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 2rem;
+  padding-bottom: 12px;
+}
+.track :global(.swiper-wrapper) {
+  align-items: stretch;
+}
+
+.slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+}
+
+.slide > :global(*) {
+  width: 100%;
+}
+
+.cardAlt {
+  background: var(--color-bg);
+}
+.cardAlt:hover {
+  background: color-mix(in srgb, var(--color-bg) 50%, transparent);
+}
+/*# sourceMappingURL=EatSpots.module.css.map */

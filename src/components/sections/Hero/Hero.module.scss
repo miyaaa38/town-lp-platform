@@ -1,0 +1,67 @@
+@use "../../../styles/tokens/mixins" as *;
+
+.hero {
+  padding-top: min(10rem, vw(10rem, 1440));
+  padding-inline: 1rem;
+
+  @include tab {
+    padding-top: min(10rem, vw(10rem));
+    padding-inline: vw(1rem);
+  }
+}
+
+.content {
+  margin-inline: auto;
+}
+
+.catch {
+  font-size: 1.5rem;
+  color: var(--color-ink);
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  @include tab {
+    font-size: vw(1.125rem);
+  }
+}
+
+.place {
+  margin-top: 1rem;
+  font-size: min(vw(6rem, 1440), 6rem);
+  color: var(--color-ink);
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+
+  @include tab {
+    font-size: vw(3rem);
+  }
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin-top: 5rem;
+  margin-inline: auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  position: relative;
+
+  @include tab {
+    margin-top: 3rem;
+    border-radius: var(--radius-md);
+    aspect-ratio: 3 / 4;
+  }
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}

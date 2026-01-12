@@ -1,0 +1,79 @@
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: min(1.3333333333vw, 1rem);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 0.5rem;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+}
+.card:hover {
+  background-color: var(--color-mid);
+}
+.card:hover .detailArrow {
+  transform: translateX(6px) rotate(45deg);
+}
+
+@supports (grid-template-rows: subgrid) {
+  .card {
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+  }
+}
+.thumb {
+  width: 100%;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 3/2;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.body h3 {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.body p {
+  color: var(--color-muted);
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+
+.detail {
+  background: transparent;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 100vmax;
+  color: var(--color-accent);
+  text-align: left;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.detailArrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid var(--color-accent);
+  border-right: 1px solid var(--color-accent);
+  transform: rotate(45deg);
+}
+/*# sourceMappingURL=SpotCard.module.css.map */
