@@ -185,6 +185,14 @@ src/
 
 ---
 
+## ✅ Status
+
+- [x] Onomichi town LP
+- [ ] Favorite feature (WIP)
+- [ ] Multi-town support
+
+---
+
 ## ▶ 開発手順
 
 ### 必要環境
@@ -208,3 +216,9 @@ npm run dev
 ## 📝 メモ
 
 - MSW の Service Worker は `public/mockServiceWorker.js` に配置
+
+---
+
+## 🌐 Production URL
+
+- https://town-lp-platform.vercel.app/town/onomichi
