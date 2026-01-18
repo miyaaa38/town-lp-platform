@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export default function MockProvider({
+export function MockProvider({
   children,
 }: {
   children: React.ReactNode;

@@ -3,7 +3,7 @@ import "../styles/globals.scss";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Darumadrop_One, Noto_Sans_JP } from "next/font/google";
-import MockProvider from "./MockProvider";
+import { MockProvider } from "./MockProvider";
 
 const notoSans = Noto_Sans_JP({
   subsets: ["latin"],
