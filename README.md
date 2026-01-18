@@ -117,6 +117,11 @@ Favorite {
 
 ## 📁 ディレクトリ方針（ベース）
 
+### Export ルール
+
+- `components/**` は named exports
+- `app/**/page.tsx` と `app/**/layout.tsx` は default exports
+
 ```
 src/
 ├── app/
