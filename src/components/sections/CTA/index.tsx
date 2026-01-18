@@ -6,7 +6,7 @@ type CTAProps = {
   description: string;
 };
 
-export default function CTA({ title, description }: CTAProps) {
+export function CTA({ title, description }: CTAProps) {
   return (
     <section className={`section ${styles.cta}`}>
       <div className={styles.inner}>

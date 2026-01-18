@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import type { Spot } from "../../../lib/data/towns";
-import Dialog from "../../ui/Dialog";
-import SpotSwiper from "../../ui/SpotCarousel/SpotSwiper";
+import { Dialog } from "../../ui/Dialog";
+import { SpotSwiper } from "../../ui/SpotCarousel/SpotSwiper";
 import styles from "./EatSpots.module.scss";
 
 type EatSpotsProps = {
   spots: Spot[];
 };
 
-export default function EatSpots({ spots }: EatSpotsProps) {
+export function EatSpots({ spots }: EatSpotsProps) {
   const [activeSpotId, setActiveSpotId] = useState<string | null>(null);
   const activeSpot = spots.find((spot) => spot.id === activeSpotId) ?? null;
 

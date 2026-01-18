@@ -6,7 +6,7 @@ type AccessProps = {
   mapSrc?: string;
 };
 
-export default function Access({ title, details, mapSrc }: AccessProps) {
+export function Access({ title, details, mapSrc }: AccessProps) {
   return (
     <section className={`section ${styles.access}`}>
       <div className={`container ${styles.container}`}>

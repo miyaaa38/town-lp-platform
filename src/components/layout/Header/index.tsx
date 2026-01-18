@@ -6,7 +6,7 @@ import Link from "next/link";
 import styles from "./Header.module.scss";
 import { useAuthStore } from "../../../lib/stores/authStore";
 
-export default function Header() {
+export function Header() {
   const [isFavorite, setIsFavorite] = useState(false);
   const user = useAuthStore((state) => state.user);
 

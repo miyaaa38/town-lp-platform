@@ -12,7 +12,7 @@ type DialogProps = {
   children?: ReactNode;
 };
 
-export default function Dialog({
+export function Dialog({
   open,
   title,
   description,

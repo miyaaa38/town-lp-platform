@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import type { Spot } from "../../../lib/data/towns";
-import Dialog from "../../ui/Dialog";
-import SpotGrid from "../../ui/SpotCarousel/SpotGrid";
+import { Dialog } from "../../ui/Dialog";
+import { SpotGrid } from "../../ui/SpotCarousel/SpotGrid";
 import styles from "./ExperienceSpots.module.scss";
 
 type ExperienceSpotsProps = {
   spots: Spot[];
 };
 
-export default function ExperienceSpots({ spots }: ExperienceSpotsProps) {
+export function ExperienceSpots({ spots }: ExperienceSpotsProps) {
   const [activeSpotId, setActiveSpotId] = useState<string | null>(null);
   const activeSpot = spots.find((spot) => spot.id === activeSpotId) ?? null;
 

@@ -1,7 +1,7 @@
 "use client";
 
 import type { Spot } from "../../../lib/data/towns";
-import SpotCard from "./SpotCard";
+import { SpotCard } from "./SpotCard";
 
 type SpotGridProps = {
   spots: Spot[];
@@ -11,7 +11,7 @@ type SpotGridProps = {
   cardClassName?: string;
 };
 
-export default function SpotGrid({
+export function SpotGrid({
   spots,
   onDetail,
   className,

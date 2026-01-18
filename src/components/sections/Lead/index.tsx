@@ -5,7 +5,7 @@ type LeadProps = {
   body: string;
 };
 
-export default function Lead({ title, body }: LeadProps) {
+export function Lead({ title, body }: LeadProps) {
   return (
     <section className={`section ${styles.lead}`}>
       <h2>{title}</h2>

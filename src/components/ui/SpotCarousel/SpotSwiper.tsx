@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import type { Spot } from "../../../lib/data/towns";
-import SpotCard from "./SpotCard";
+import { SpotCard } from "./SpotCard";
 
 type SpotSwiperProps = {
   spots: Spot[];
@@ -15,7 +15,7 @@ type SpotSwiperProps = {
   cardClassName?: string;
 };
 
-export default function SpotSwiper({
+export function SpotSwiper({
   spots,
   onDetail,
   className,

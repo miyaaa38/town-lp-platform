@@ -7,7 +7,7 @@ type HeroProps = {
   imageSrc: string | StaticImageData;
 };
 
-export default function Hero({ catchCopy, place, imageSrc }: HeroProps) {
+export function Hero({ catchCopy, place, imageSrc }: HeroProps) {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>

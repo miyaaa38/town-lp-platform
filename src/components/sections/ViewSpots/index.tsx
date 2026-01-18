@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import type { Spot } from "../../../lib/data/towns";
-import Dialog from "../../ui/Dialog";
-import SpotGrid from "../../ui/SpotCarousel/SpotGrid";
+import { Dialog } from "../../ui/Dialog";
+import { SpotGrid } from "../../ui/SpotCarousel/SpotGrid";
 import styles from "./ViewSpots.module.scss";
 
 type ViewSpotsProps = {
   spots: Spot[];
 };
 
-export default function ViewSpots({ spots }: ViewSpotsProps) {
+export function ViewSpots({ spots }: ViewSpotsProps) {
   const [activeSpotId, setActiveSpotId] = useState<string | null>(null);
   const activeSpot = spots.find((spot) => spot.id === activeSpotId) ?? null;
 

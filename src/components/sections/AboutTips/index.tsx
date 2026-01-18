@@ -5,7 +5,7 @@ type AboutTipsProps = {
   tips: string[];
 };
 
-export default function AboutTips({ title, tips }: AboutTipsProps) {
+export function AboutTips({ title, tips }: AboutTipsProps) {
   return (
     <section className={`section ${styles.about}`}>
       <div className="container">

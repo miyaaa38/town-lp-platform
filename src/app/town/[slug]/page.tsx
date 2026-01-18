@@ -1,15 +1,15 @@
 import { notFound } from "next/navigation";
-import Header from "../../../components/layout/Header";
-import Footer from "../../../components/layout/Footer";
-import Hero from "../../../components/sections/Hero";
-import Lead from "../../../components/sections/Lead";
-import AboutTips from "../../../components/sections/AboutTips";
-import ViewSpots from "../../../components/sections/ViewSpots";
-import EatSpots from "../../../components/sections/EatSpots";
-import ExperienceSpots from "../../../components/sections/ExperienceSpots";
-import ModelCourse from "../../../components/sections/ModelCourse";
-import Access from "../../../components/sections/Access";
-import CTA from "../../../components/sections/CTA";
+import { Header } from "../../../components/layout/Header";
+import { Footer } from "../../../components/layout/Footer";
+import { Hero } from "../../../components/sections/Hero";
+import { Lead } from "../../../components/sections/Lead";
+import { AboutTips } from "../../../components/sections/AboutTips";
+import { ViewSpots } from "../../../components/sections/ViewSpots";
+import { EatSpots } from "../../../components/sections/EatSpots";
+import { ExperienceSpots } from "../../../components/sections/ExperienceSpots";
+import { ModelCourse } from "../../../components/sections/ModelCourse";
+import { Access } from "../../../components/sections/Access";
+import { CTA } from "../../../components/sections/CTA";
 import { getTownBySlug } from "../../../lib/data/towns";
 
 type TownPageProps = {

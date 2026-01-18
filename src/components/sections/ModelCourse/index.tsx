@@ -6,7 +6,7 @@ type ModelCourseProps = {
   stops: string[];
 };
 
-export default function ModelCourse({
+export function ModelCourse({
   title,
   summary,
   stops,

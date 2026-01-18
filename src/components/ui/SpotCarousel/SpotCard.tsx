@@ -9,7 +9,7 @@ type SpotCardProps = {
   className?: string;
 };
 
-export default function SpotCard({ spot, onDetail, className }: SpotCardProps) {
+export function SpotCard({ spot, onDetail, className }: SpotCardProps) {
   return (
     <article
       className={[styles.card, className].filter(Boolean).join(" ")}
