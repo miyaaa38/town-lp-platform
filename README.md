@@ -121,6 +121,7 @@ Favorite {
 
 - `components/**` は named exports
 - `app/**/page.tsx` と `app/**/layout.tsx` は default exports
+- ESLint で export ルールを強制
 
 ```
 src/
